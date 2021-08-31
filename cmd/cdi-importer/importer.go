@@ -42,6 +42,8 @@ func init() {
 func main() {
 	defer klog.Flush()
 
+	fmt.Println("test ycl.")
+
 	certsDirectory, err := ioutil.TempDir("", "certsdir")
 	if err != nil {
 		panic(err)
